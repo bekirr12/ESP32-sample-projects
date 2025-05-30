@@ -4,9 +4,9 @@
 #include <FastLED.h>
 
 // blynk definitions
-#define BLYNK_TEMPLATE_ID "TMPL6wMK0Bxoc"
-#define BLYNK_TEMPLATE_NAME "deney1"
-#define BLYNK_AUTH_TOKEN "Q-fQ4WcwiX_S6lNt9Wqv5_SJzg2fSdDK"
+#define BLYNK_TEMPLATE_ID ""
+#define BLYNK_TEMPLATE_NAME ""
+#define BLYNK_AUTH_TOKEN ""
 #define BLYNK_PRINT Serial
 
 // DHT11
@@ -24,8 +24,8 @@ DHT dht(DHTPIN, DHTTYPE);
 CRGB leds[NUM_LEDS];
 
 // Wi-Fi credentials
-char ssid[] = "FiberHGW_TPB4AE";
-char pass[] = "bekiradamerkanadam";
+char ssid[] = "";
+char pass[] = "";
 
 BlynkTimer timer;
 
@@ -42,8 +42,8 @@ BLYNK_WRITE(V0) {
 
 // V1 Fan
 BLYNK_WRITE(V1) {
-  int percent = param.asInt(); // 0–100 arası
-  fanSpeed = map(percent, 0, 100, 0, 255); // PWM'e çevir
+  int percent = param.asInt();
+  fanSpeed = map(percent, 0, 100, 0, 255);
   ledcWrite(FAN_PIN, fanSpeed);
 }
 
