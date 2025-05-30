@@ -3,9 +3,9 @@
 #include <HTTPClient.h>
 #include <ArduinoJson.h>
 
-const char* ssid = "Bekir Sami's Galaxy S20 FE";
-const char* password = "33333333";
-const char* Gemini_Token = "AIzaSyAJjdBOOIJIzfzIKW-WDmV8t1X_b2JjTwg";
+const char* ssid = "";
+const char* password = "";
+const char* Gemini_Token = "";
 const char* Gemini_Max_Tokens = "100";
 String res = "";
 
