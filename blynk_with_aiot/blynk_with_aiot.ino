@@ -34,13 +34,13 @@ int redVal = 0;
 int greenVal = 0;
 int blueVal = 0;
 
-/*
+
 // V0 Led
 BLYNK_WRITE(V0) {
   int ledState = param.asInt();
   digitalWrite(LED_PIN, ledState);
 }
-*/
+
 /*
 // V1 Fan
 BLYNK_WRITE(V1) {
