@@ -2,8 +2,8 @@
 #include <time.h>
 
 // WiFi configuration
-const char* ssid = "FiberHGW_TPB4AE";
-const char* password = "bekiradamerkanadam";
+const char* ssid = "";
+const char* password = "";
 
 // Buzzer pin
 const int buzzerPin = 35;
