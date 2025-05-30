@@ -41,13 +41,15 @@ BLYNK_WRITE(V0) {
   digitalWrite(LED_PIN, ledState);
 }
 */
-
+/*
 // V1 Fan
 BLYNK_WRITE(V1) {
   int percent = param.asInt();
   fanSpeed = map(percent, 0, 100, 0, 255);
   ledcWrite(FAN_PIN, fanSpeed);
 }
+*/
+
 
 // V2 temperature
 void sendTemperature() {
